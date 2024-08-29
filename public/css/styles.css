@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.about, .featured-products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.product-card {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+#homeBG {
+    background-image: url("../images/slide1.png");
+    background-position: center;
+}
+#homePage h1 {
+    color: #fff;
+    font-size: 5rem;
+}
+#homePage h3 {
+    color: #fff;
+}
+.kode-mono-menu {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+#main-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 150px;
+}
+#homePage {
+    display: flex;
+    /*background-color: aliceblue;*/
+    background-image: url("../images/t1.png");
+    background-position: center;
+    height: 50vh;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+}
+#about-home p{
+    font-size: 1.5rem;
+}
+.sticky-header {
+    position: fixed; /* Fixes the header to the viewport */
+    top: 0; /* Aligns it to the top of the page */
+    left: 0;
+    width: 100%; /* Makes the header stretch across the page */
+    background-color: #333; /* Background color of the header */
+    color: white; /* Text color */
+    padding: 15px 0; /* Padding for spacing */
+    text-align: center; /* Center-aligns the text */
+    z-index: 1000; /* Ensures the header stays above other content */
+}
+.hero {
+    display: flex;
+    color: #333;
+    justify-content: space-between;
+}
+.hero p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.hero h1 {
+    font-size: 4rem;
+}
+.hero2 {
+    display: flex;
+    color: #333;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.hero2 p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.hero2 h1 {
+    font-size: 4rem;
+}
+.text-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+
+/* carousel code*/
+/* Carousel container */
+.carousel-container {
+    position: relative;
+    width: 60%;
+    max-width: 600px;
+    overflow: hidden; /* Hide overflow */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel slide (image wrapper) */
+.carousel-slide {
+    display: flex; /* Flexbox to display images in a row */
+    transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+}
+
+/* Carousel images */
+.carousel-slide img {
+    width: 100%; /* Images take full width of the container */
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+/* Navigation buttons */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 1000;
+}
+
+/* Position of the navigation buttons */
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}

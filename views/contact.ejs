@@ -1,0 +1,56 @@
+<%- include('partials/header.ejs') %>
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us.</p>
+
+        <form action="submit_form.php" method="POST">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+
+        <div class="contact-info">
+            <h3>Our Contact Information</h3>
+            <p>Address: 123 Fashion Ave, New York, NY 10001</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: contact@clothingstore.com</p>
+        </div>
+    </section>
+
+    <%- include('partials/footer.ejs') %>
+    <!-- Footer
+    <footer>
+        <p>&copy; 2024 Clothing Store. All Rights Reserved.</p>
+    </footer>
+</body>
+<script>
+    // Example for a simple form validation on the Contact Us page
+document.querySelector('form').addEventListener('submit', function(event) {
+    let name = document.querySelector('input[name="name"]').value;
+    let email = document.querySelector('input[name="email"]').value;
+    
+    if (name === "" || email === "") {
+        alert("Please fill in all fields.");
+        event.preventDefault();
+    }
+});
+
+</script>
+</html> -->
