@@ -56,7 +56,7 @@ header nav ul li a {
 .product-card {
     width: 300px;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: none;
 }
 
 footer {
@@ -105,6 +105,9 @@ footer {
 #about-home p{
     font-size: 1.5rem;
 }
+#about-home img {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
 .sticky-header {
     position: fixed; /* Fixes the header to the viewport */
     top: 0; /* Aligns it to the top of the page */
@@ -114,7 +117,7 @@ footer {
     color: white; /* Text color */
     padding: 15px 0; /* Padding for spacing */
     text-align: center; /* Center-aligns the text */
-    z-index: 1000; /* Ensures the header stays above other content */
+    z-index: 1100; /* Ensures the header stays above other content */
 }
 .hero {
     display: flex;
@@ -153,7 +156,7 @@ footer {
 /* Carousel container */
 .carousel-container {
     position: relative;
-    width: 60%;
+    width: 300px;
     max-width: 600px;
     overflow: hidden; /* Hide overflow */
     border-radius: 10px;
@@ -177,8 +180,8 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    color: #333;
     border: none;
     padding: 10px;
     cursor: pointer;
