@@ -150,7 +150,9 @@ footer {
     flex-direction: column;
     margin-bottom: 50px;
 }
-
+#contactText{
+    font-size: 2rem;
+}
 
 /* carousel code*/
 /* Carousel container */
@@ -197,4 +199,101 @@ footer {
 
 .next-button {
     right: 10px;
+}
+#contactText a{
+    color: #333;
+    
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li {
+        margin: 10px 0;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero {
+        padding: 50px 10px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+    .hero {
+        padding: 30px 10px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        margin: 0 15px;
+    }
+    #homePage {
+        height: 30vh;
+        padding: 20px;
+        background-size: cover; /* Adjusts the background image to fit */
+    }
+    .product-card {
+        width: 90%; /* Almost full width of the screen */
+        margin: 0 auto 20px;
+    }
+    .text-block h1 {
+        font-size: 1.8rem;
+    }
+    #contactText {
+        font-size: 1.2rem;
+    }
+    .carousel-container {
+        width: 100%;
+        max-width: 100%; /* Carousel takes full width */
+    }
+    .carousel-button {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .about.hero, .about.hero2 {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .about.hero img, .about.hero2 img {
+        width: 100%;
+        height: auto;
+    }
+    #main-container{
+        padding-top: 350px;
+    }
+    header nav ul li {
+        padding-right: 40px;
+    }
+    #homePage h1 {
+        font-size: large;
+    }
+}
+
+/* Larger Screens */
+@media (min-width: 1200px) {
+    .hero h1 {
+        font-size: 5rem;
+    }
+    .product-card {
+        width: 280px;
+    }
 }
