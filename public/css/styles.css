@@ -230,6 +230,53 @@ footer {
     .hero {
         padding: 50px 10px;
     }
+
+    .hero p {
+        margin: 0 15px;
+    }
+    #homePage {
+        height: 30vh;
+        padding: 20px;
+        background-size: cover; /* Adjusts the background image to fit */
+    }
+    .product-card {
+        width: 90%; /* Almost full width of the screen */
+        margin: 0 auto 20px;
+    }
+    .text-block h1 {
+        font-size: 1.8rem;
+    }
+    #contactText {
+        font-size: 1.2rem;
+    }
+    .carousel-container {
+        width: 100%;
+        max-width: 100%; /* Carousel takes full width */
+    }
+    .carousel-button {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .about.hero, .about.hero2 {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .about.hero img, .about.hero2 img {
+        width: 100%;
+        height: auto;
+    }
+    #main-container{
+        padding-top: 350px;
+    }
+    header nav ul li {
+        padding-right: 40px;
+    }
+    #homePage h1 {
+        font-size: large;
+    }
+    .sticky-header{
+        position: absolute;
+    }
 }
 
 /* Mobile Devices */
@@ -285,6 +332,9 @@ footer {
     }
     #homePage h1 {
         font-size: large;
+    }
+    .sticky-header{
+        position: absolute;
     }
 }
 
